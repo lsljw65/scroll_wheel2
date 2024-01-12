@@ -61,11 +61,6 @@ $(document).ready(function(){
         $(".nav-list").removeClass("nav-position")
     }
     
-
-    $(window).resize(function(){
-        init();
-    })
-
     $(".section").each(function(index){
         // console.log("index : "+index)
         $(window).scroll(function(){
@@ -131,7 +126,7 @@ $(document).ready(function(){
         console.log("스크롤탑 : "+$scrollTop);
        
         
-        if($scrollTop>=$("section").eq(2).offset().top && $scrollTop+$("section").eq(2).offset().top/2<iconPositionTop){
+        if($scrollTop>=$("section").eq(2).offset().top && $scrollTop+$("section").eq(2).offset().top/2<$("section").eq(3).offset().top){
             console.log("스크롤 탑 : "+$scrollTop)
             $("section").off();
         }else{
