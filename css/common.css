@@ -269,6 +269,204 @@ header{
 #skill .s-title{
     background:rgb(240, 162, 162);
 }
+/* 수정 */
+.web-box{
+    width:80%;
+    padding:0;
+    border:none;
+    padding:5px;
+}
+/* 추가 */
+.resort{
+    width:100%;
+    background-color:white;
+}
+.resort-image{
+    width:100%;
+}
+.resort-image img{
+    width:100%;
+}
+.exp{
+    width:100%;
+    /* background-color:white; */
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px 10px;
+}
+.exp span{
+    width:25%;
+    text-align: center;
+}
+.exp span img{
+    width:50%;
+}
+.exp a{
+    width:25%;
+    height:30px;
+    background:rgb(67, 124, 208);
+    border-radius:5px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-weight: 900;
+}
+.c-more{
+    width:25%;
+    height:30px;
+    background:rgb(67, 124, 208);
+    border-radius:5px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-weight: 900;
+    cursor: pointer;
+}
+.resort h2,
+.concept{
+    display:none;
+}
+.b-d-box h2,
+.b-d-box p{
+    display:none;
+}
+.img-modal{
+    width:100%;
+    height:100%;
+    position:fixed;
+    background-color:rgba(0,0,0,0.5);
+    left:0;
+    top:0;
+    z-index:99999;
+    display:none;
+}
+.img-modal-body{
+    width:100%;
+    height:100%;
+    background-color:white;
+    position:relative;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    padding:10px;
+}
+
+.img-modal-body h2{
+    width:100%;
+    background-color:orange;
+    color:white;
+    padding:20px;
+    text-align: center;
+    margin-bottom:10px; 
+}
+.img-modal-body .img{
+    width:100%;
+    height:80%;
+    overflow:auto;
+}
+.img-modal-body img{
+    width:100%;
+}
+.link-close{
+    display:flex;
+    justify-content: space-between;
+}
+.img-modal-body a{
+    width:150px;
+    height:40px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background:rgb(90, 96, 205);
+    color:white;
+    border-radius:0 0 5px 5px;
+}
+.img-modal-close{
+    width:40px;
+    height:40px;
+    background:black;
+    color:white;
+    border:none;
+    margin-right:20px;
+    cursor: pointer;
+}
+
+.web-modal{
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.5);
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:9999;
+    display:none;
+}
+.web-modal-body{
+    width:90%;
+    height:auto;
+    position:relative;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background:white;
+    padding:10px;
+}
+.web-modal-body h2{
+    width:100%;
+    padding:10px;
+    background:orange;
+    text-align:center;
+    margin-bottom:20px;
+}
+.web-modal-body .img{
+    width:100%;
+}
+.web-modal-body .img img{
+    width:100%;
+}
+.web-modal-body .concept{
+    display:block;
+    width:80%;
+    margin:auto;
+    padding:10px 0;
+    line-height:200%;
+    font-size:1.2rem;
+    margin-bottom:20px;
+}
+.web-modal-body .modal-exp{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.web-modal-body .modal-exp span{
+    width:25%;
+    text-align: center;
+}
+.res-img img{
+    width:50%;
+}
+.web-modal-body .modal-exp a{
+    width:25%;
+    height:40px;
+    background:rgb(67, 124, 208);
+    color:white;
+    font-weight: 900;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.web-close{
+    width:40px;
+    height:40px;
+    background:black;
+    border:none;
+    color:white;
+}
+
 
 @media screen and (min-width:450px){
     
@@ -290,16 +488,28 @@ header{
         height:80%;
         flex-direction: row;
     }
+    /* 수정 */
     .web-box{
-        width:30%;
-        max-width:400px;
+        width:45%;
+        /* max-width:400px; */
     }
+    /* 수정 끝 */
     .banner-detail-container{
         width:75%; 
     }
     .b-d-box{
         width:33.33%;
     }
+
+    .img-modal-body{
+        width:50%;
+        height:80%;
+        padding:10px;
+    }
+    .web-modal-body{
+        width:50%;
+    }
+    
 }
 @media screen and (min-width:1024px){
     .first-box,
